@@ -1,13 +1,5 @@
-body{
-    background-image: url(imagenes_pokemon/fondo_paisaje.jpg);
-    background-size: cover;
+.footer{
+    background-color: black;
+    height: 80px;
+    color: aliceblue;
 }
-
-#head{
-    background-color:rgb(76, 147, 228);
-    color:white;
-    text-align:center;
-    height:50px;
-    padding: 4px;
-}
-
