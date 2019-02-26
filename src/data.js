@@ -2,6 +2,7 @@
 
 //crear una funcion que filtre tipo de pokemones//
 
+<<<<<<< HEAD
 const example = ()  => {
   return 'example';
 };
@@ -31,3 +32,20 @@ return ordered;
 
 };
 //document.get
+=======
+/*const example = () => {
+  return 'example';
+};
+
+window.example = example;*/
+
+const filterData = (data, condition) => {
+  let filter = data.filter(element => {
+    return element.weaknesses === condition;
+  })
+   console.log(filter)
+  return filter;
+}
+
+window.filterData = filterData;
+>>>>>>> 4d150bd90ffd209b905c5e2ea4b1f8cb4f5b500b
