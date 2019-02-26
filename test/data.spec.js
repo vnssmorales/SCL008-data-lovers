@@ -14,3 +14,13 @@ describe('example', () => {
     assert.equal(example(), 'example');
   });
 })
+
+describe('data.filterName',() => {
+
+  it('debería ser una función',() => {
+    assert.equal(typeof data.filterName, 'function');
+  });  
+  it('debería retornar "filterName" para', () => {
+    assert.equal(data.filterName)
+});
+});
