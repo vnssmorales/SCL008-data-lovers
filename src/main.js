@@ -11,26 +11,26 @@ document.getElementById('root').innerHTML += `<p>${names1[i]}</p>`
 }
 }); */
 
-const data = window.POKEMON;
+const data = window.POKEMON.pokemon;
 const container = document.getElementById('root');
 
 const showData = (data) => {
     data.forEach(element => {
-        container.innerHTML += `<p>${element.pokemon}</p>
-        <img class="image" src="${element.image}" alt="${element.pokemon}">`
+        container.innerHTML = `<p>${element.weaknesses}</p>
+        <img class="image" src="${element.img}" alt="${element.weaknesses}">`
 })
 }
 
-document.getElementById('select-weaknesses').addEventListener('change', () => {
+/*document.getElementById('select-weaknesses').addEventListener('change', () => {
  let condition = document.getElementById('select-weaknesses').value;
  let result = window.filterData(data,condition);
 
  container.innerHTML ="";
  result.forEach(element => {
-     container.innerHTML += `<p>${element.pokemon}</p>
-     <img class="image" src="${element.image}" alt="${element.pokemon}">`
+     container.innerHTML += `<p>${element.weaknesses}</p>
+     <img class="image" src="${element.img}" alt="${element.weaknesses}">`
 })
-});
+}); */
     
 
 window.onload = showData(data);

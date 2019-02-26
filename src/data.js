@@ -13,6 +13,7 @@ const filterData = (data, condition) => {
   let filter = data.filter(element => {
     return element.weaknesses === condition;
   })
+   console.log(filter)
   return filter;
 }
 
