@@ -11,10 +11,19 @@ window.example = example;*/
 
 const filterData = (data, condition) => {
   let filter = data.filter(element => {
-    return element.weaknesses === condition;
+    return element.weaknesses.includes(condition) === true;
   })
-   console.log(filter)
+
+  return filter;
+}
+
+const filterDataType = (data, condition) => {
+  let filter = data.filter(element => {
+    return element.type.includes(condition) === true;
+  })
+
   return filter;
 }
 
 window.filterData = filterData;
+window.filterDataType = filterDataType;

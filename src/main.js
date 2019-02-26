@@ -13,24 +13,49 @@ document.getElementById('root').innerHTML += `<p>${names1[i]}</p>`
 
 const data = window.POKEMON.pokemon;
 const container = document.getElementById('root');
+container.innerHTML ="";
 
 const showData = (data) => {
     data.forEach(element => {
-        container.innerHTML = `<p>${element.weaknesses}</p>
-        <img class="image" src="${element.img}" alt="${element.weaknesses}">`
+        container.innerHTML += `<p>${element.name}</p>
+        <img class="image" src="${element.img}" alt="${element.weaknesses}">
+        <p>${element.weaknesses}</p>`
 })
 }
 
-/*document.getElementById('select-weaknesses').addEventListener('change', () => {
+document.getElementById('select-weaknesses').addEventListener('change', () => {
  let condition = document.getElementById('select-weaknesses').value;
  let result = window.filterData(data,condition);
 
  container.innerHTML ="";
  result.forEach(element => {
-     container.innerHTML += `<p>${element.weaknesses}</p>
-     <img class="image" src="${element.img}" alt="${element.weaknesses}">`
+     container.innerHTML += `<p>${element.name}</p> 
+        <img class="image" src="${element.img}" alt="${element.weaknesses}">
+        <p>${element.weaknesses}</p>`
+ })
 })
-}); */
+;
+const showData2 = (data) => {
+    data.forEach(element => {
+        container.innerHTML += `<p>${element.name}</p>
+        <img class="image" src="${element.img}" alt="${element.type}">
+        <p>${element.type}</p>`
+    })
+}
+
+document.getElementById('select-type').addEventListener('change', () => {
+    let condition = document.getElementById('select-type').value;
+    let result = window.filterDataType(data,condition);
+
+    container.innerHTML ="";
+    result.forEach(element => {
+        container.innerHTML += `<p>${element.name}</p> 
+           <img class="image" src="${element.img}" alt="${element.type}">
+           <p>${element.type}</p>`
+   })   
+
+}); 
     
 
 window.onload = showData(data);
+window.onload = showData2(data);
