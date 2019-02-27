@@ -26,7 +26,6 @@ const showData = (data) => {
 document.getElementById('select-weaknesses').addEventListener('change', () => {
  let condition = document.getElementById('select-weaknesses').value;
  let result = window.filterData(data,condition);
- console.log(condition);
 
  container.innerHTML ="";
  result.forEach(element => {
