@@ -4,23 +4,23 @@ require('../src/data');
 require('./data.spec.js');
 
 
-describe('example', () => {
+describe('Función filterData', () => {
+  const data = [
+    {
+      name: 'Charmander',
+      type: 'Fire'
+    },
+    {
+      name:'Squirtle',
+      type:'Water'
+    }
+  ]
   
-  it('debería ser una función', () => {
-    assert.equal(typeof example, 'function');
-  });
+  it('debería retornar el objeto Charmander al filtrar', () => {
+    assert.deepEqual(window.filterData(data, 'Fire'), [{name: 'Charmander' , type: 'Fire'}])
+  })
 
-  it('debería retornar "example"', () => {
-    assert.equal(example(), 'example');
-  });
+  it('debería retornar el objeto Squirtle al filtrar', () => {
+    assert.deepEqual(window.filterData(data, 'Water'), [{name: 'Squirtle' , type: 'Water'}])
+  })
 })
-
-describe('data.filterName',() => {
-
-  it('debería ser una función',() => {
-    assert.equal(typeof data.filterName, 'function');
-  });  
-  it('debería retornar "filterName" para', () => {
-    assert.equal(data.filterName)
-});
-});

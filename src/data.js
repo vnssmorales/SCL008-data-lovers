@@ -25,5 +25,8 @@ const filterDataType = (data, condition) => {
   return filter;
 }
 
+const sortData = (data, sortby, sortOrder) =>
+  let order = data.order
+
 window.filterData = filterData;
 window.filterDataType = filterDataType;

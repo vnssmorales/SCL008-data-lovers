@@ -55,7 +55,10 @@ document.getElementById('select-type').addEventListener('change', () => {
    })   
 
 }); 
-    
+ 
+const sortData = (data) => {
+    data.
+}
 
 window.onload = showData(data);
 window.onload = showData2(data);
