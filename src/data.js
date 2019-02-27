@@ -1,7 +1,6 @@
 /* Manejo de data */
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+//crear una funcion que filtre tipo de pokemones//
 
 /*const example = () => {
   return 'example';
@@ -29,4 +28,5 @@ const sortData = (data, sortby, sortOrder) =>
   let order = data.order
 
 window.filterData = filterData;
+
 window.filterDataType = filterDataType;
