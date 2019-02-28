@@ -24,9 +24,22 @@ const filterDataType = (data, condition) => {
   return filter;
 }
 
-const sortData = (data, sortby, sortOrder) =>
-  let order = data.order
+const sortData = (data, sort) => {
+  const ordered = {};
 
+  if (sort == 1) {
+    Object.keys(data).sort().forEach(function (key) {
+      ordered[key] = data[key];
+    });
+  } else {
+    Object.keys(data).sort().reverse().forEach(function (key) {
+      ordered[key] = data[key];
+    });
+  }
+  return ordered;
+
+}
+
+window.sortData = sortData;
 window.filterData = filterData;
-
 window.filterDataType = filterDataType;
