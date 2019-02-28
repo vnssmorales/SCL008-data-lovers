@@ -28,3 +28,7 @@ width: 90px;
 height: 100px;
 margin: 0 auto;
 }
+
+.btn-group button {
+    margin:0px 20px; 
+}
