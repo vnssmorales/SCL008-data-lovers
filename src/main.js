@@ -37,11 +37,16 @@ document.getElementById('select-weaknesses').addEventListener('change', () => {
 ;
 const showData2 = (data) => {
     data.forEach(element => {
-        container.innerHTML += `<p>${element.name}</p>
-        <img class="image" src="${element.img}" alt="${element.type}">
-        <p>${element.type}</p>`
+        container.innerHTML += `<div class="card">
+        <img src="${element.img}" class="card-img-top" alt="${element.type}">
+        <div class="card-body">
+        <p class="card-text">${element.name}</p>
+        <p class="card-text">${element.type}</p>
+        </div>
+        </div>`
     })
 }
+
 
 document.getElementById('select-type').addEventListener('change', () => {
     let condition = document.getElementById('select-type').value;
@@ -49,13 +54,22 @@ document.getElementById('select-type').addEventListener('change', () => {
 
     container.innerHTML ="";
     result.forEach(element => {
-        container.innerHTML += `<p>${element.name}</p> 
-           <img class="image" src="${element.img}" alt="${element.type}">
-           <p>${element.type}</p>`
+        container.innerHTML += `<div class="card">
+        <img src="${element.img}" class="card-img-top" alt="${element.type}">
+        <div class="card-body">
+        <p class="card-text">${element.name}</p> 
+        <p class="card-text">${element.type}</p>
+        </div>
+        </div>`
    })   
 
 }); 
-    
+ 
+/* const sortData = (data) => {
+    data.sort(element => {
+
+    })
+} */
 
 window.onload = showData(data);
 window.onload = showData2(data);
