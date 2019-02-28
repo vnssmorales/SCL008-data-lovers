@@ -5,8 +5,9 @@
 /*const example = () => {
   return 'example';
 };
-
 window.example = example;*/
+
+
 
 const filterData = (data, condition) => {
   let filter = data.filter(element => {
@@ -23,6 +24,7 @@ const filterDataType = (data, condition) => {
 
   return filter;
 }
+
 
 const sortData = (data, sort) => {
   const ordered = {};
