@@ -3,3 +3,28 @@
     height: 80px;
     color: aliceblue;
 }
+.card{
+    width: 15%;
+    margin: 1em;
+    background: blue;
+    box-shadow: 0 15px 30px black;
+    text-align: center;
+    align-content: flex-start;
+}
+
+.card img{
+ width: 40%;
+ align-self: center;
+}
+
+.card .box{
+text-align: center;
+padding: 1.20em;
+width: 100%;
+}
+
+.card .box .img{
+width: 90px;
+height: 100px;
+margin: 0 auto;
+}
