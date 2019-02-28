@@ -13,6 +13,7 @@
             
     <nav class="navbar navbar-light" style="background-color: #a7d3fc;">
      <div class="btn-group" role="group">
+
       <button type="button" class="btn btn-secondary" data-toggle="dropdown">
       Pokemones por Debilidades
         <select id="select-weaknesses">
@@ -35,14 +36,13 @@
           <option value="Dragon">Dragon</option>       
           </select>
         </button>
-        
+
       <button type="button" class="btn btn-secondary" data-toggle="dropdown">
       Pokemones por Tipo
         <select id="select-type">
           <option value="0"></option>
           <option value="Fire">Fire</option>
           <option value="Poison">Poison</option>
-          <option value="Fire">Fire</option>
           <option value="Flying">Flying</option>
           <option value="Water">Water</option>
           <option value="Bug">Bug</option>
@@ -55,32 +55,28 @@
           <option value="Ice">Ice</option>
           <option value="Ghost">Ghost</option>
           <option value="Dragon">Dragon</option>
-
         </select>
       </button>
 
-  <!--   <button type="button" class="btn btn-secondary" data-toggle="dropdown">
+        <button type="button" class="btn btn-secondary" data-toggle="dropdown">
         Pokemones por Nombre
-          <select id="select-Name">
-           <option value="0"></option>
-           <option value=" ">Ordenados de A-Z</option>
-           <option value=" ">Ordenados de Z-A</option>
-
-         </select>
-      </button>     --> 
+        <select id="select-name">
+          <option value="0"></option>
+          <option value="za">Ordenados de A-Z</option>
+          <option value="az">Ordenados de Z-A</option>  
+        </select>
+      </button>
 
      </div>
-
-          <option value="Fairy">Fairy</option>     
-              </select>
-            </button>
-        </div>
 
     </nav>
 
     </div>
-    
-  <div class="row" id="root"></div>
+  <div class="container-fluid">
+  <div class="row" id="root">
+
+  </div>
+</div>
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>

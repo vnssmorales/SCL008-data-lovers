@@ -17,9 +17,11 @@ container.innerHTML ="";
 
 const showData = (data) => {
     data.forEach(element => {
-        container.innerHTML += `<p>${element.name}</p>
-        <img class="image" src="${element.img}" alt="${element.weaknesses}">
-        <p>${element.weaknesses}</p>`
+        container.innerHTML += `<div class="card">
+        <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
+        <div class="card-body">
+        <p class="card-text">${element.name}</p>
+        <p class="card-text">${element.weaknesses}</p>`
 })
 }
 
@@ -29,9 +31,11 @@ document.getElementById('select-weaknesses').addEventListener('change', () => {
 
  container.innerHTML ="";
  result.forEach(element => {
-     container.innerHTML += `<p>${element.name}</p> 
-        <img class="image" src="${element.img}" alt="${element.weaknesses}">
-        <p>${element.weaknesses}</p>`
+     container.innerHTML += `<div class="card">
+     <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
+     <div class="card-body">
+     <p class="card-text">${element.name}</p> 
+     <p class="card-text">${element.weaknesses}</p>`
  })
 })
 ;

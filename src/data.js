@@ -26,20 +26,22 @@ const filterDataType = (data, condition) => {
 }
 
 
-const sortData = (data, sort) => {
-  const ordered = {};
+const sortData = (data, condition) => {
+  let ordered = [];
 
-  if (sort == 1) {
-    Object.keys(data).sort().forEach(function (key) {
-      ordered[key] = data[key];
-    });
-  } else {
-    Object.keys(data).sort().reverse().forEach(function (key) {
-      ordered[key] = data[key];
-    });
-  }
-  return ordered;
+  if (condition === 'az') {
+    ordered = data.sort(sortByName);
+}if(condition === 'za'){
+    ordered = data.sort(sortByName).reverse();
+}
 
+}
+function sortByName (a,b){
+  if(a.name < b.name)
+  return -1;
+  if(a.name > b.name)
+  return -1;
+  return 0;
 }
 
 window.sortData = sortData;
