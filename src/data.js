@@ -25,13 +25,12 @@ const filterDataType = (data, condition) => {
   return filter;
 }
 
-
-const sortData = (data, condition) => {
+const sortData = (data,sortBy,sortOrder) => {
   let ordered = [];
 
-  if (condition === 'az') {
+  if (sortBy === 'az') {
     ordered = data.sort(sortByName);
-}if(condition === 'za'){
+}if(sortBy === 'za'){
     ordered = data.sort(sortByName).reverse();
 }
 
