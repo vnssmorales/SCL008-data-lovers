@@ -26,10 +26,11 @@ const filterDataType = (data, condition) => {
 }
 
 
+
 const sortData = (data, sort) => {
   const ordered = {};
 
-  if (sort == 1) {
+  if (sort === 1) {
     Object.keys(data).sort().forEach(function (key) {
       ordered[key] = data[key];
     });
