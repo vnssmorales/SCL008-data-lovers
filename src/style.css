@@ -29,7 +29,8 @@ margin: 0 auto;
 }
 
 .btn-group button {
-    margin:0px 20px; 
+    margin:0px 20px;
+    height:10px ; 
 }
 
 .footer{
