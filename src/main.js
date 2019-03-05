@@ -1,5 +1,6 @@
 /* Manejo del DOM */
 
+
 const data = window.POKEMON.pokemon;
 const container = document.getElementById('root');
 container.innerHTML ="";
@@ -7,14 +8,13 @@ container.innerHTML ="";
 //Filtro por debilidad de pokemon//
 
 const showData = (data) => {
-    container.innerHTML +=
-    data.forEach(element => { `<div class="col-sm-12 col-md-4 col-lg-3">Hola<div class="card">
+
         <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
         <p class="card-text">${element.weaknesses}</p>
         </div>
-        </div>
+
         </div>`
 })
 }
@@ -25,14 +25,7 @@ document.getElementById('select-weaknesses').addEventListener('change', () => {
 
 container.innerHTML ="";
  result.forEach(element => {
-     container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card">
-     <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
-     <div class="card-body">
-     <p class="card-text">${element.name}</p> 
-     <p class="card-text">${element.weaknesses}</p>
-     </div>
-     </div>
-     
+
      </div>`
  })
 })

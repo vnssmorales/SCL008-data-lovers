@@ -53,14 +53,4 @@ margin: 0 auto;
 
 .btn-group button {
     margin:0px 20px; 
-    margin-bottom: 5px;
-    padding: 10px;
-    border-color: black;
-    background: #d12525;
-}
 
-.footer{
-    background-color: black;
-    height: 80px;
-    color: aliceblue;
-}
