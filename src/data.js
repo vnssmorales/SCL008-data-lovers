@@ -25,24 +25,25 @@ const filterDataType = (data, condition) => {
   return filter;
 }
 
-const sortData = (data,sortBy,sortOrder) => {
+/*const sortData = (data, sortOrder) => {
   let ordered = [];
 
-  if (sortBy === 'az') {
+  if (sortOrder === 'az') {
     ordered = data.sort(sortByName);
-}if(sortBy === 'za'){
+}if(sortOrder === 'za'){
     ordered = data.sort(sortByName).reverse();
+} 
+console.log(ordered);
 }
 
-}
 function sortByName (a,b){
   if(a.name < b.name)
   return -1;
   if(a.name > b.name)
-  return -1;
+  return 1;
   return 0;
 }
 
-window.sortData = sortData;
+window.sortData = sortData;*/
 window.filterData = filterData;
 window.filterDataType = filterDataType;

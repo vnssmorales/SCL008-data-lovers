@@ -1,27 +1,19 @@
 /* Manejo del DOM */
 
-/*const btnStart = document.getElementsByTagName('button')[0];
-
-btnStart.addEventListener('click', () => {
-document.getElementById('root').innerHTML = '';
-document.getElementById('root').innerHTML += `<h3 class="title">Este es Bulbasaur</h3>
-<img src="http://www.serebii.net/pokemongo/pokemon/001.png" alt="Bulbasaur">`
-for (let i = 0; i < names1.length; i++) {
-document.getElementById('root').innerHTML += `<p>${names1[i]}</p>`
-}
-}); */
-
 const data = window.POKEMON.pokemon;
 const container = document.getElementById('root');
 container.innerHTML ="";
 
+//Filtro por debilidad de pokemon//
+
 const showData = (data) => {
     container.innerHTML +=
-    data.forEach(element => { `<div class="card">
+    data.forEach(element => { `<div class="col-sm-12 col-md-4 col-lg-3">Hola<div class="card">
         <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
         <p class="card-text">${element.weaknesses}</p>
+        </div>
         </div>
         </div>`
 })
@@ -33,23 +25,29 @@ document.getElementById('select-weaknesses').addEventListener('change', () => {
 
 container.innerHTML ="";
  result.forEach(element => {
-     container.innerHTML += `<div class="card">
+     container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card">
      <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
      <div class="card-body">
      <p class="card-text">${element.name}</p> 
      <p class="card-text">${element.weaknesses}</p>
      </div>
+     </div>
+     
      </div>`
  })
 })
 ;
+
+//Filtro por tipo de pokemon//
+
 const showData2 = (data) => {
     data.forEach(element => {
-    container.innerHTML += `<div class="card">
+    container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card">
         <img src="${element.img}" class="card-img-top" alt="${element.type}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
         <p class="card-text">${element.type}</p>
+        </div>
         </div>
         </div>`
 })
@@ -61,19 +59,23 @@ document.getElementById('select-type').addEventListener('change', () => {
 
     container.innerHTML ="";
     result.forEach(element => {
-        container.innerHTML += `<div class="card">
+        container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card">
         <img src="${element.img}" class="card-img-top" alt="${element.type}">
         <div class="card-body">
         <p class="card-text">${element.name}</p> 
         <p class="card-text">${element.type}</p>
+        </div>
         </div>
         </div>`
 })   
 
 })
 ;
-const sortData = (data) => {
-    data.forEach(element => {
+
+//Ordenar pokemon por nombre//
+
+/*const sortData = (data) => {
+    data.sort(sortByName => {
     container.innerHTML += `<div class="card">
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
@@ -88,7 +90,7 @@ document.getElementById('select-name').addEventListener('change', () => {
     let result = window.data.sortData(data,'name',sortOrder);
 
 container.innerHTML ="";
-result.forEach(element => {
+result.sort(sortByName => {
         container.innerHTML += `<div class="card">
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
@@ -97,8 +99,8 @@ result.forEach(element => {
         </div>`
 })
 })
-;    
+;   */
 
 window.onload = showData(data);
 window.onload = showData2(data);
-window.onload = sortData(data);
+//window.onload = sortData(data); //
