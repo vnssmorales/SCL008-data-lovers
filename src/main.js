@@ -1,9 +1,10 @@
 /* Manejo del DOM */
 
-
 const data = window.POKEMON.pokemon;
 const container = document.getElementById('root');
 container.innerHTML ="";
+
+//filtro por debilidad de pokemon//
 
 const showData = (data) => {
     data.forEach(element => {
@@ -33,6 +34,9 @@ document.getElementById('select-weaknesses').addEventListener('change', () => {
  })
 })
 ;
+
+//filtro por tipo de pokemon//
+
 const showData2 = (data) => {
     data.forEach(element => {
         container.innerHTML += `<div class="card">
@@ -44,7 +48,6 @@ const showData2 = (data) => {
         </div>`
     })
 }
-
 
 document.getElementById('select-type').addEventListener('change', () => {
     let condition = document.getElementById('select-type').value;
@@ -60,14 +63,15 @@ document.getElementById('select-type').addEventListener('change', () => {
         </div>
         </div>`
    })   
-
-}); 
+})
+; 
  
+window.onload = showData(data);
+window.onload = showData2(data);
+
 /* const sortData = (data) => {
     data.sort(element => {
 
     })
 } */
 
-window.onload = showData(data);
-window.onload = showData2(data);
