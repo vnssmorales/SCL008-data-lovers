@@ -24,14 +24,20 @@ const filterDataType = (data, condition) => {
 
   return filter;
 }
-/*
-const sortData = (data, sortOrder) => {
-  let ordered = [];
 
-  if (sortOrder === 'az') {
-   ordered = data.sort(sortByname);
-  }if (sortOrder === 'za'){
-    orderer = data.sort(sortByname).reverse();
+
+
+const sortData = (data, sort) => {
+  const ordered = {};
+
+  if (sort === 1) {
+    Object.keys(data).sort().forEach(function (key) {
+      ordered[key] = data[key];
+    });
+  } else {
+    Object.keys(data).sort().reverse().forEach(function (key) {
+      ordered[key] = data[key];
+    });
   }
    return ordered;
   } 
