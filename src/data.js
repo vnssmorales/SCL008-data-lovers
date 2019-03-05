@@ -24,7 +24,7 @@ const filterDataType = (data, condition) => {
 
   return filter;
 }
-
+/*
 const sortData = (data, sortOrder) => {
   let ordered = [];
 
@@ -42,7 +42,8 @@ function sortByname (a,b){
   if (a.name > b.name )
   return  1;
 }
+*/
+/*window.sortData = sortData;*/
 
-window.sortData = sortData;
 window.filterData = filterData;
 window.filterDataType = filterDataType;

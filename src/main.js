@@ -63,15 +63,38 @@ document.getElementById('select-type').addEventListener('change', () => {
         </div>
         </div>`
    })   
-})
-; 
- 
+}); 
+
 window.onload = showData(data);
 window.onload = showData2(data);
 
-/* const sortData = (data) => {
-    data.sort(element => {
+/*ordenar pokemones por nombre 
+const sortData = (data) => {
+data.forEach(element => {
+container.innerHTML += `<div class="card">
+ <img src="${element.img}" class="card-img-top" alt="${element.name}">
+ <div class="card-body">
+  <p class="card-text">${element.type}</p>
+  <p class="card-text">${element.name}</p>
+  </div>
+  </div>´
+})
+}
 
-    })
-} */
+document.getElementById('select-name').addEventListener('change', () => {
+    let condition = document.getElementById('select-name').value;
+    let result = window.sortDataName(data,condition);
+
+    container.innerHTML ="";
+    result.forEach(element => {
+        container.innerHTML += `<div class="card">
+        <img src="${element.img}" class="card-img-top" alt="${element.name}">
+        <div class="card-body">
+        <p class="card-text">${element.name}</p> 
+        <p class="card-text">${element.name}</p>
+        </div>
+        </div>´
+})   
+})
+; */
 
