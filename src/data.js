@@ -26,19 +26,16 @@ const filterDataType = (data, condition) => {
 }
 
 
-
-const sortData = (data, sort) => {
-  const ordered = {};
-
-  if (sort === 1) {
-    Object.keys(data).sort().forEach(function (key) {
-      ordered[key] = data[key];
-    });
-  } else {
-    Object.keys(data).sort().reverse().forEach(function (key) {
-      ordered[key] = data[key];
-    });
-  }
+  const sortData = (data, condition) => {
+    let sorted = [];
+  
+    if (condition === 'az') {
+      sorted = data.sort(sortByName);
+    }
+    if (condition === 'za') {
+      sorted = data.sort(sortByName).reverse();
+    }
+  
    return ordered;
   } 
 
@@ -48,8 +45,7 @@ function sortByname (a,b){
   if (a.name > b.name )
   return  1;
 }
-*/
-/*window.sortData = sortData;*/
 
+window.sortData = sortData;
 window.filterData = filterData;
 window.filterDataType = filterDataType;

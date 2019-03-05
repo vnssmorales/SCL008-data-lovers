@@ -83,7 +83,7 @@ container.innerHTML += `<div class="card">
 
 document.getElementById('select-name').addEventListener('change', () => {
     let condition = document.getElementById('select-name').value;
-    let result = window.sortDataName(data,condition);
+    let result = window.sortDataName(data,data.Name,condition);
 
     container.innerHTML ="";
     result.forEach(element => {
