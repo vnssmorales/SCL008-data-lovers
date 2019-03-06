@@ -76,6 +76,7 @@ const sortData2 = (data) => {
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
+        <p class="card-text">${element.id}</p>
         </div>
         </div>`
 })
@@ -91,6 +92,7 @@ result.sort(element => {
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
+        <p class="card-text">${element.id}</p>
         </div>
         </div>`
 })
