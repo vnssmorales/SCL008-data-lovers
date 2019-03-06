@@ -1,8 +1,12 @@
 # Data Lovers
 
-## Índice
+## ¿Qué es?
 
-* [Preámbulo](#preámbulo)
+Es una aplicación web responsive diseñada para jugadores Principiantes de Pokémon Go!. 
+Permite acceder a información específica de tus Pokemones favoritos, como or ejemplo: buscar por tipo, buscar por debilidades y por nombre.
+
+
+* [Objetivo](#objetivo-de-la-aplicación)
 * [Descripción](#resumen-del-proyecto)
 * [Consideraciones generales](#consideraciones-generales)
 * [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
@@ -15,24 +19,12 @@
 
 ***
 
-## Preámbulo
+## Objetivo de la Aplicación
 
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
-
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
-
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-\* Puedes ver el datalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
+* Entregar información sobre los pokemones a los usuarios principiantes para que puedan subir de nivel rápidamente.
+* Permitir al usuario buscar los pokemones de acuerdo a sus debilidades.
+* Permitir al usuario buscar los pokemones por tipo.
+* Permitir al usuario buscar los pokemones por nombre.
 
 ## Resumen del proyecto
 

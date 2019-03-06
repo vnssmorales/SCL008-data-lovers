@@ -34,8 +34,7 @@ container.innerHTML ="";
      
      </div>`
  })
-})
-;
+});
 
 //Filtro por tipo de pokemon//
 
@@ -67,7 +66,6 @@ document.getElementById('select-type').addEventListener('change', () => {
         </div>
         </div>`
 })   
-
 });
 
 //Ordenar pokemon por nombre//
@@ -78,16 +76,14 @@ const sortData2 = (data) => {
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
+        <p class="card-text">${element.num}</p>
         </div>
         </div>`
 })
 };
 
 document.getElementById('select-name').addEventListener('change', () => {
-
-   
    let sortOrder = document.getElementById('select-name').value;
- 
    let result = window.sortData(data,sortOrder);
 
 container.innerHTML ="";
@@ -96,11 +92,12 @@ result.sort(element => {
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
+        <p class="card-text">${element.num}</p>
         </div>
         </div>`
 })
 });
 
-window.onload = sortData(data); 
+window.onload = sortData2(data); 
 window.onload = showData(data);
 window.onload = showData2(data);

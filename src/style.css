@@ -13,7 +13,6 @@
   height: calc(100% - 16px);
   width: 75%;
   padding: 8px;
-
 }
 
 #root{
@@ -24,9 +23,7 @@
 }
 
 .card{
-
   margin: 1em;
-  background: blue;
   box-shadow: 0 15px 30px black;
   text-align: center;
   align-content: flex-start;
@@ -40,11 +37,9 @@ align-self: center;
 .card .box{
 text-align: center;
 padding: 1.20em;
-
 }
 
 .card .box .img{
-
 height: 100px;
 margin: 0 auto;
 }
@@ -54,6 +49,7 @@ margin: 0 auto;
   margin-bottom: 5px;
   padding: 10px;
   border-color: black;
+  border-radius: 15px 15px 15px 15px;
   background: #d12525;
 }
 
