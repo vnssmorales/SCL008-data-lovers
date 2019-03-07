@@ -1,12 +1,17 @@
-# Data Lovers
+# Enciclopoke 2019
+
+[Enciclopoke](https://github.com/vnssmorales/SCL008-data-lovers/tree/master/src/imagenes_pokemon/Logo-aplicacion.png)
 
 ## ¿Qué es?
 
 Es una aplicación web responsive diseñada para jugadores Principiantes de Pokémon Go!. 
-Permite acceder a información específica de tus Pokemones favoritos, como or ejemplo: buscar por tipo, buscar por debilidades y por nombre.
+Permite acceder a información específica de tus Pokemones favoritos, como por ejemplo: 
+* buscar por debilidades
+* buscar por tipo
+* buscar por nombre
 
 
-* [Objetivo](#objetivo-de-la-aplicación)
+* [Objetivo de la Aplicación](#objetivo-de-la-aplicación)
 * [Descripción del Proyecto](#resumen-del-proyecto)
 * [Consideraciones generales](#consideraciones-generales)
 * [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
@@ -31,7 +36,7 @@ Permite acceder a información específica de tus Pokemones favoritos, como or e
 Luego de leer y comentar los requisitos del Proyecto, lo primero que realizamos fue una lista de tareas, ordenadas en base a las prioridades necesarias para cumplir con lo requerido.
 De acuerdo a nuestra lista de tareas realizada en [Trello](https://trello.com/b/1G1qF74G/data-lover-pokemon), comenzamos con las entrevistas, para obtener nuestras "Historias de Usuario", y así tener una idea mas clara de como debía ser nuestra aplicación.
  
-Realizamos también un diagrama de flujo con el que pudimos comenzar a trabajar en nuestro prototipo de baja fidelidad, para poder entender quien sería nuestro usuario y qué necesitaba saber y así construír nuestro prototipo de alta fidelidad.
+Realizamos también un [diagrama de flujo] con el que pudimos comenzar a trabajar en nuestro prototipo de baja fidelidad, para poder entender quien sería nuestro usuario y qué necesitaba saber y así construír nuestro prototipo de alta fidelidad.
 
 
 Una vez que definas tu área de interés, entiende quién es tu usuario y qué
