@@ -4,7 +4,7 @@ const data = window.POKEMON.pokemon;
 const container = document.getElementById('root');
 container.innerHTML ="";
 
-//Filtro por debilidad de pokemon//
+//filtro por debilidad de pokemon//
 
 const showData = (data) => {
     container.innerHTML += data.forEach(element => {`<div class="col-sm-12 col-md-4 col-lg-3"><div class="card" id="drawcards">
@@ -36,7 +36,7 @@ container.innerHTML ="";
  })
 });
 
-//Filtro por tipo de pokemon//
+//filtro por tipo de pokemon//
 
 const showData2 = (data) => {
     data.forEach(element => {
@@ -101,3 +101,4 @@ result.sort(element => {
 window.onload = showData(data);
 window.onload = showData2(data);
 window.onload = sortData2(data); 
+
