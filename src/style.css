@@ -7,6 +7,8 @@
  height: 500px;
   width: 25%;
   margin-top: 10%;
+
+
 }
 
 .content {
@@ -18,8 +20,11 @@
 #root{
   height: 100vh;
   width: 100%;
-  background-color: #ffff4d;
   overflow-y: scroll;
+}
+
+#drawcards{
+  background-color: #cc99ff
 }
 
 .card{
@@ -46,15 +51,26 @@ margin: 0 auto;
 
 .btn-group button {
   margin:0px 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 10px;
   border-color: black;
   border-radius: 10px 10px 10px 10px;
-  background: #d12525;
+  background: #ff3333;
+}
+
+.btn-primary {
+  background-color: #d12525;
 }
 
 .footer{
-  background-color: black;
+  background-color: #ffff33;
   height: 80px;
-  color: aliceblue;
+  color: black;
+}
+.header{
+  background-color: #ffff33;
+}
+
+.jumbotron{
+  background-image: url(imagenes_pokemon/fondo-blanco.jpg);
 }
