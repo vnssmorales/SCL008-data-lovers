@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Filtro Data Lovers Respaldo</title>
+    <title>Data Lovers</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
   </head>
 <body>
 
-   <div class="container-fluid">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-4">
-                <img src="imagenes_pokemon/pokebolaS.png" class="img-fluid" alt="Responsive image">
-              </div>
-              <div class="col-sm-5">
-               <h1>Enciclopoke</h1>
-              </div>
-          </div>
+    <header class="header">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+              <img src="imagenes_pokemon/iconorojogirado.png" class="img-fluid" alt="Responsive image" srcset="">
+            </div>
+            <div class="col-sm-5">
+            <h1 class="title">ENCICLOPOKE 2019</h1>
+            </div>
         </div>
-
-    </div>
+      </div>
+      </header>
+  
   <div class="container">
   <div class="row cuerpo">
   <div class="col-md-12 col-lg-3 nav_left">
+    <p><strong>Elige lo que deseas saber de tu pokémon</strong></p>
         <div class="row">
           <div class="col btn-group" role="group">
               <button type="button" class="btn btn-secondary" data-toggle="dropdown">
-                  Pokemones por
+                 Buscar Pokemones por
                     <select id="select-weaknesses">
                       <option value="0">Debilidades</option>
                       <option value="Grass">Grass</option>
@@ -48,6 +50,7 @@
                       <option value="Dark">Dark</option>
                       <option value="Steel">Steel</option>
                       <option value="Dragon">Dragon</option>
+                      <option value="Fire">Fire</option>
                       </select>
                     </button>
           </div>
@@ -56,7 +59,7 @@
         <div class="row">
           <div class="col btn-group" role="group">
               <button type="button" class="btn btn-secondary" data-toggle="dropdown">
-                  Pokemones por
+                  Buscar Pokemones por
                     <select id="select-type">
                       <option value="0">Tipo</option>
                       <option value="Fire">Fire</option>
@@ -81,7 +84,7 @@
         <div class="row">
           <div class="col btn-group" role="group">
               <button type="button" class="btn btn-secondary" data-toggle="dropdown">
-                Pokemones por
+                Buscar Pokemones por
                 <select id="select-name">
                   <option value="0">Nombre</option>
                   <option value="az">de A-Z</option>
@@ -92,7 +95,7 @@
         </div>
   </div>
   
-  <div class="container>
+  <!--<div class="container>
   <div class="row cuerpo">
   <div class="col-md-12 col-lg-3 nav_left">
    
@@ -120,13 +123,28 @@
                       </select>
                     </button>
           </div>
-        </div>
+        </div> -->
   <div class="col-md-12 col-lg-9 content">
     <div class="row" id="root"></div>
 
   </div>
   </div>
 </div>
+
+<div class="container-fluid footer">
+    <footer>
+      <div class="row">
+        <div class="col-sm-9">
+     Los derechos de esta página son reservados
+      </div>
+      <div class="col-sm-3">
+        <img src="imagenes_pokemon/facebook.png" alt="facebook" >
+        <img src="imagenes_pokemon/instagram.png" alt="instagram">
+        <img src="imagenes_pokemon/youtube.png" alt="youtube">
+      </div>
+     </div>
+    </footer>
+  </div>
 
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>

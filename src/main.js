@@ -7,7 +7,7 @@ container.innerHTML ="";
 //filtro por debilidad de pokemon//
 
 const showData = (data) => {
-    container.innerHTML += data.forEach(element => {`<div class="col-sm-12 col-md-4 col-lg-3"><div class="card">
+    container.innerHTML += data.forEach(element => {`<div class="col-sm-12 col-md-4 col-lg-3"><div class="card" id="drawcards">
         <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
@@ -24,7 +24,7 @@ document.getElementById('select-weaknesses').addEventListener('change', () => {
 
 container.innerHTML ="";
  result.forEach(element => {
-     container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card">
+     container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
      <img src="${element.img}" class="card-img-top" alt="${element.weaknesses}">
      <div class="card-body">
      <p class="card-text">${element.name}</p> 
@@ -40,7 +40,7 @@ container.innerHTML ="";
 
 const showData2 = (data) => {
     data.forEach(element => {
-    container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card">
+    container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
         <img src="${element.img}" class="card-img-top" alt="${element.type}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
@@ -57,7 +57,7 @@ document.getElementById('select-type').addEventListener('change', () => {
 
     container.innerHTML ="";
     result.forEach(element => {
-        container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card">
+        container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
         <img src="${element.img}" class="card-img-top" alt="${element.type}">
         <div class="card-body">
         <p class="card-text">${element.name}</p> 
@@ -72,7 +72,7 @@ document.getElementById('select-type').addEventListener('change', () => {
 
 const sortData2 = (data) => {
     data.sort(element => {
-    container.innerHTML += `<div class="card">
+    container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
@@ -88,7 +88,7 @@ document.getElementById('select-name').addEventListener('change', () => {
 
 container.innerHTML ="";
 result.sort(element => {
-        container.innerHTML += `<div class="card">
+        container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
         <img src="${element.img}" class="card-img-top" alt="${element.name}">
         <div class="card-body">
         <p class="card-text">${element.name}</p>
@@ -105,7 +105,7 @@ let select =document.getElementById("select-weaknesses".addEventListener('change
     document.getElementById(select-weaknesses).innerHTML= 
 }*/
 
-//window.onload = sortData2(data); //
-//window.onload = showData(data);//
-//window.onload = showData2(data);//
+window.onload = showData2(data);
+window.onload = showData(data);
+window.onload = sortData2(data); 
 
