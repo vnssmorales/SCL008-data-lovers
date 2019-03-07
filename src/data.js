@@ -33,6 +33,18 @@ function sortBy (a,b){
   return 1;
   return 0;
 }
+//probando funcion estadistica//
+/*const computeStats (data, type) => {
+  let counter = 0;
+  dataforEach(function(element){
+    if(element.type.includes(type)){
+      counter.counter+1;
+    }
+  });
+  returnmath.round((counter/151)*100)+"%";
+}  */
+
+
 
 window.sortData = sortData;
 window.filterData = filterData;

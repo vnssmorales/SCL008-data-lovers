@@ -97,8 +97,15 @@ result.sort(element => {
         </div>`
 })
 });
+/*
+let select =document.getElementById("select-weaknesses".addEventListener('change'() => {
+    let value select = "select-weaknesses".value;
+    let result
+    result =window.data.computeStats(data, value);
+    document.getElementById(select-weaknesses).innerHTML= 
+}*/
 
-window.onload = sortData2(data); 
-window.onload = showData(data);
-window.onload = showData2(data);
+//window.onload = sortData2(data); //
+//window.onload = showData(data);//
+//window.onload = showData2(data);//
 
