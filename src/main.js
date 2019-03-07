@@ -98,7 +98,7 @@ result.sort(element => {
 })
 });
 
-window.onload = showData(data);
 window.onload = showData2(data);
+window.onload = showData(data);
 window.onload = sortData2(data); 
 

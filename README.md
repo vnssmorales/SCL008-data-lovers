@@ -28,6 +28,11 @@ Permite acceder a información específica de tus Pokemones favoritos, como or e
 
 ## Resumen del proyecto
 
+Luego de leer y comentar los requisitos del Proyecto, lo primero que realizamos fue una lista de tareas, ordenadas en base a las prioridades necesarias para cumplir con lo requerido.
+De acuerdo a nuestra lista de tareas realizada en [Trello](https://trello.com/b/1G1qF74G/data-lover-pokemon), comenzamos con las entrevistas, para obtener nuestras "Historias de Usuario", y así tener una idea mas clara de como debía ser nuestra aplicación.
+ 
+También se realizó un breve diagrama de flujo donde se expusieron las principales características que querían mostrarse en la aplicación. A pesar de que era un bosquejo bastante arcaico, nos dio la idea que queríamos realizar después en el prototipo de baja fidelidad
+
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
 necesita.
