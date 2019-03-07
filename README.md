@@ -7,7 +7,7 @@ Permite acceder a información específica de tus Pokemones favoritos, como or e
 
 
 * [Objetivo](#objetivo-de-la-aplicación)
-* [Descripción](#resumen-del-proyecto)
+* [Descripción del Proyecto](#resumen-del-proyecto)
 * [Consideraciones generales](#consideraciones-generales)
 * [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
 * [Parte obligatoria](#parte-obligatoria)
@@ -31,16 +31,8 @@ Permite acceder a información específica de tus Pokemones favoritos, como or e
 Luego de leer y comentar los requisitos del Proyecto, lo primero que realizamos fue una lista de tareas, ordenadas en base a las prioridades necesarias para cumplir con lo requerido.
 De acuerdo a nuestra lista de tareas realizada en [Trello](https://trello.com/b/1G1qF74G/data-lover-pokemon), comenzamos con las entrevistas, para obtener nuestras "Historias de Usuario", y así tener una idea mas clara de como debía ser nuestra aplicación.
  
-También se realizó un breve diagrama de flujo donde se expusieron las principales características que querían mostrarse en la aplicación. A pesar de que era un bosquejo bastante arcaico, nos dio la idea que queríamos realizar después en el prototipo de baja fidelidad
+Realizamos también un diagrama de flujo con el que pudimos comenzar a trabajar en nuestro prototipo de baja fidelidad, para poder entender quien sería nuestro usuario y qué necesitaba saber y así construír nuestro prototipo de alta fidelidad.
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
-
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
 
 Una vez que definas tu área de interés, entiende quién es tu usuario y qué
 necesita saber o ver exactamente; luego podrás construir la interfaz que le
@@ -65,15 +57,6 @@ Estos son datos que te proponemos:
   Este set nos muestra el número de personas heridas en accidentes de
   transporte, con data anual desde 1960 y categorizada por tipo de transporte
   (aire, barco, automóvil, moto, bicileta, ...).
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún calculo agregado**. Como aclaración,
-con cálculo agregado nos referimos a distintos cálculos que puedes hacer con
-la data que tienes para mostrar información aún más relevante a los usuarios.
-Una opción serían cálculos estadísticos como el promedio, el máximo o el mínimo,
-por ejemplo, si tenemos una colección que representa a un grupo de personas,
-y cada persona está representada como un _objeto_ con una _propiedad_ `altura`,
-podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
 
 
 ## Consideraciones generales
