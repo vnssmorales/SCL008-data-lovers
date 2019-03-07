@@ -18,13 +18,16 @@
 #root{
   height: 100vh;
   width: 100%;
-  background-color: #ffff4d;
   overflow-y: scroll;
+  background-image: url(imagenes_pokemon/fondo_pokemon.jpg);
+}
+
+#drawcards{
+  background-color: #d0a3fd
 }
 
 .card{
   margin: 1em;
-  background: blue;
   box-shadow: 0 15px 30px black;
   text-align: center;
   align-content: flex-start;
@@ -47,15 +50,47 @@ margin: 0 auto;
 
 .btn-group button {
   margin:0px 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 10px;
   border-color: black;
-  background: #d12525;
+  border-radius: 10px 10px 10px 10px;
+  background: #ffff33;
+  color: #000;
+  
+}
+
+.btn-primary {
+  background-color: #d12525;
+}
+
+.title{
+  margin-top: 5%;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .footer{
+<<<<<<< HEAD
   background-color: rgb(228, 228, 43);
+=======
+  background-color: #ffff33;
+>>>>>>> 2e7d976c989d7cdf12fcfa26c9c67cf382c26bbb
   height: 80px;
-  color: aliceblue;
+  color: black;
+}
+.header{
+  background-color: #ffff33;
+  font-size: 25px;
+  font-style: serif;
+  font-weight: serif;
 }
 
+.jumbotron{
+  background-image: url(imagenes_pokemon/fondo_pokemon.jpg);
+  margin-bottom: 0px;
+}
+.container{
+  background-image: url(imagenes_pokemon/fondo_pokemon.jpg);
+}
+.card-text{
+  font-size: 14px;
+}
