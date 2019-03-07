@@ -1,6 +1,6 @@
 # Enciclopoke 2019
 
-[Enciclopoke](https://github.com/vnssmorales/SCL008-data-lovers/tree/master/src/imagenes_pokemon/Logo-aplicacion.png)
+![imágen pagina](https://github.com/vnssmorales/SCL008-data-lovers/tree/master/src/imagenes_pokemon/Logo-aplicacion.png)
 
 ## ¿Qué es?
 
