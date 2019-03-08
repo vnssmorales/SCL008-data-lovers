@@ -23,16 +23,6 @@ Permite acceder a información específica de tus Pokemones favoritos, como por 
 * Permitir al usuario buscar los pokemones por tipo.
 * Permitir al usuario buscar los pokemones por nombre.
 
-## Descripción del Proyecto
-
-Luego de leer y comentar los requisitos del Proyecto, lo primero que realizamos fue una lista de tareas, ordenadas en base a las prioridades necesarias para cumplir con lo requerido.
-De acuerdo a nuestra lista de tareas realizada en [Trello](https://trello.com/b/1G1qF74G/data-lover-pokemon), comenzamos con las entrevistas, para obtener nuestras "Historias de Usuario", y así tener una idea mas clara de como debía ser nuestra aplicación.
- 
-Realizamos también un [diagrama de flujo] con el que pudimos comenzar a trabajar en nuestro prototipo de baja fidelidad, para poder entender quien sería nuestro usuario y qué necesitaba saber, y así construír nuestro prototipo de alta fidelidad.
-
-
-![diagrama de flujo](./src/imagenes_pokemon/Diagrama_de_Flujo.jpg "Diagrama de Flujo")
-
 ## Historias de Usuario
 
 En base a las encuestas realizadas nuestras historias de usuario mas recurrentes fueron:
