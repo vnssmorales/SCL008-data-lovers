@@ -31,7 +31,7 @@ Permite acceder a información específica de tus Pokemones favoritos, como or e
 Luego de leer y comentar los requisitos del Proyecto, lo primero que realizamos fue una lista de tareas, ordenadas en base a las prioridades necesarias para cumplir con lo requerido.
 De acuerdo a nuestra lista de tareas realizada en [Trello](https://trello.com/b/1G1qF74G/data-lover-pokemon), comenzamos con las entrevistas, para obtener nuestras "Historias de Usuario", y así tener una idea mas clara de como debía ser nuestra aplicación.
  
-También se realizó un breve diagrama de flujo donde se expusieron las principales características que querían mostrarse en la aplicación. A pesar de que era un bosquejo bastante arcaico, nos dio la idea que queríamos realizar después en el prototipo de baja fidelidad
+También se realizó un breve diagrama de flujo donde se expusieron las principales características que querían mostrarse en la aplicación. A pesar de que era un bosquejo bastante arcaico, nos dio la idea que queríamos realizar después en el prototipo de baja fidelidad.
 
 En este proyecto **construirás una _página web_ para visualizar un
 _conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
@@ -48,23 +48,10 @@ ayude a interactuar y entender mejor esos datos.
 
 Estos son datos que te proponemos:
 
-* Indicadores de desarrollo del Banco Mundial de algunos países (Brasil, Chile, 
-  México y Perú). Estos datos incluyen indicadores demográficos, económicos y 
-  comerciales.
 * [Pokémon](src/data/pokemon/pokemon.json):
   En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
   junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](https://pokemongolive.com).
-* [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-* [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicileta, ...).
+
 
 Como entregable final tendrás una página web que permita **visualizar la data,
 filtrarla, ordenarla y hacer algún calculo agregado**. Como aclaración,
@@ -78,7 +65,7 @@ podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
 
 ## Consideraciones generales
 
-* Este proyecto se debe resolver en duplas.
+* Este proyecto lo realizamos en dupla.
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
 * Tiempo para completarlo: El proyecto dura 3 semanas, trabaja con sprints 
@@ -90,29 +77,6 @@ El objetivo principal de este proyecto es que aprendas a diseñar y construir un
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
 usuario necesita.
 
-Dicho en palabras sencillas, aprenderás a:
-
-* Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
-* Pensar en las **necesidades de los usuarios** para crear historias de usuario.
-* Escribir y trabajar con **historias de usuario**, sus definiciones de
-  terminado (_definition of done_) en la organización y planificación de tu
-  trabajo.
-* Definir qué data y de qué forma mostrarla en el producto, basándote en
-  tu **entendimiento del usuario**.
-* Crear productos que sigan los **principios básicos de diseño visual** y
-  las **heurísticas de usabilidad**.
-* Iterar el diseño del producto, basándote en los resultados de los
-  **tests de usabilidad**.
-* Manipular **_arreglos_ (_arrays_) y _objetos_ (_objects_)**.
-* **Manipular el DOM** (agregar elementos dinámicamente basados en la data).
-* **Manejar eventos del DOM** para permitir interacción con el usuario
-  (filtrado, ordenado, ...).
-* Entender los beneficios y complejidades de **trabajar en equipo** en un
-  ambiente de incertidumbre.
-
-## Parte Obligatoria
-
-Los criterios para considerar que has completado este proyecto son:
 
 ### Definición del producto
 
@@ -137,7 +101,10 @@ iteraciones que realices, y las subas a tu repositorio, y las menciones en tu
 `README.md`.
 
 #### Prototipo de alta fidelidad
-
+<!-- link prototipo zeplin, pantalla desktop -->
+<!--https://app.zeplin.io/project/5c7daae8db2d7d520bfd8bc2/screen/5c808b2caccb04bc4256cf75 -->
+<!-- link prototipo zeplin, pantalla iphone-->
+<!--https://app.zeplin.io/project/5c7daae8db2d7d520bfd8bc2/screen/5c7db6f526c62e6244030036 -->
 Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
 _User Interface_). Para eso debes aprender a utilizar alguna herramienta de
 diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
