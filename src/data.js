@@ -44,7 +44,19 @@ function sortBy (a,b){
   return 0;
 }
 
+/*const countCandy = (data,candys) => {
+  let candyEvolution = [];
+
+  if (candys == "undefined"){
+    candyEvolution = "-"
+  }else{candys = element.candy_count;
+  }
+  return candyEvolution;
+}*/
+
+
 window.sortData = sortData;
 window.filterData = filterData;
 window.filterDataType = filterDataType;
+//window.countCandy = countCandy;//
 

@@ -1,6 +1,6 @@
 # Enciclopoke 2019
 
-![imágen pagina](https://github.com/vnssmorales/SCL008-data-lovers/tree/master/src/imagenes_pokemon/Logo-aplicacion.png)
+![logo de la aplicacion](./src/imagenes_pokemon/Logo_aplicacion.png "Logo de la aplicación")
 
 ## ¿Qué es?
 
@@ -30,7 +30,8 @@ De acuerdo a nuestra lista de tareas realizada en [Trello](https://trello.com/b/
  
 Realizamos también un [diagrama de flujo] con el que pudimos comenzar a trabajar en nuestro prototipo de baja fidelidad, para poder entender quien sería nuestro usuario y qué necesitaba saber, y así construír nuestro prototipo de alta fidelidad.
 
-[Diagrama de Flujo](https://github.com/vnssmorales/SCL008-data-lovers/tree/master/src/imagenes_pokemon/Diagrama-de-Flujo.jpg)
+
+![diagrama de flujo](./src/imagenes_pokemon/Diagrama_de_Flujo.jpg "Diagrama de Flujo")
 
 ## Historias de Usuario
 
@@ -51,9 +52,10 @@ Luego de tener definidas nuestras historias de usuario comenzamos a hacer testeo
 
 ### Prototipo de baja fidelidad
 
-[Prototipo Baja Fidelidad Parte I](https://github.com/vnssmorales/SCL008-data-lovers/tree/master/src/imagenes_pokemon/Prototipo-Baja-Fidelidad1.jpg)
 
-[Prototipo Baja Fidelidad Parte II](https://github.com/vnssmorales/SCL008-data-lovers/tree/master/src/imagenes_pokemon/Prototipo-Baja-Fidelidad2.jpg)
+![prototipo de baja fidelidad](./src/imagenes_pokemon/Prototipo_Baja_Fidelidad1.jpg "prototipo de baja fidelidad")
+
+[Prototipo baja Fidelidad Parte II](./src/imagenes_pokemon/Prototipo_Baja_Fidelidad2.jpg "prototipo de baja fidelidad")
 
 [Video de test](link al video)
 
@@ -63,12 +65,12 @@ Estas iteraciones nos permitieron tener mayor claridad para el diseño de nuestr
 
 [Prototipo de Alta Fidelidad](link al prototipo)
 
-##Testeos de usabilidad
+## Testeos de usabilidad
 
 Ya con nuestra página implementada se realizaron algunos testeos con jugadores que están iniciando en este juego.
 
-* [Test de Usabilidad 1](link al test)
-* [Test de Usabilidad 2](link al test)
+* [Test de Usabilidad 1](https://www.useloom.com/share/a4480318022f4577b3265ff4010c26d3)
+* [Test de Usabilidad 2](https://www.useloom.com/share/c7dac88c961440549c7d1461da0c967f)
 
 * La aplicación es bastante simple y sencilla de usar ya que es para principiantes. Y algunas recomendaciones fueron:
 - Incluir una opción para filtrar por cantidad de caramelos para evolucionar, que estaba contempladoen los prototipos pero no se alcanzo a terminar.
@@ -79,5 +81,5 @@ Ya con nuestra página implementada se realizaron algunos testeos con jugadores 
 
 ## Cierre
 
-* Aplicación creada por [Romina Gatica](https://github.com/RominaGatica) y [Vanessa Morales](https://github.com/vnssmorales) para [Laboratoria Cg¿hile](https://github.com/LaboratoriaChile)
+* Aplicación creada por [Romina Gatica](https://github.com/RominaGatica) y [Vanessa Morales](https://github.com/vnssmorales) para [Laboratoria Chile](https://github.com/LaboratoriaChile)
 
