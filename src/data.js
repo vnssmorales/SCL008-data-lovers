@@ -34,40 +34,13 @@ function sortBy(a, b) {
   return 0;
 }
 
-const sortCandy = (data, candyOrder) => {
-  let orderCandys = [];
-
-  if (candyOrder === 'asc') {
-    orderCandys = data.sort(sortByCandy);
-  } if (candyOrder === 'desc') {
-    orderCandys = data.sort(sortByCandy).reverse();
-  }
-  return orderCandys;
-}
-
-function sortByCandy(a, b) {
-  if (a.candy_count < b.candy_count)
-    return -1;
-  if (a.candy_count > b.candy_count)
-    return 1;
-  return 0;
-}
-
-const computeStats = (data) => {
-  let quantity = [];
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].type.includes('Poison') === true) {
-      quantity.push(data[i]);
-    }
-
-  }
-  let calculate = (quantity.length * 100) / data.length;
-  let resultCalculate = calculate.toFixed(1);
-  return resultCalculate;
+const computeStats = (data,condition) => {
+  let resultcompute = filterDataType(data,condition).length;
+  return resultcompute;
 }
 
 window.sortData = sortData;
 window.filterData = filterData;
 window.filterDataType = filterDataType;
-window.sortCandy = sortCandy;
+//window.sortCandy = sortCandy;
 window.computeStats = computeStats;

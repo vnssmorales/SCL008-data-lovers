@@ -98,96 +98,37 @@ result.sort(element => {
 })
 });
 
-const sortCandy2 = (data) => {
-    data.sort(element => {
-    container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
-        <img src="${element.img}" class="card-img-top" alt="${element.name}">
+//calculo de pokemones por tipo//
+
+const dataCompute = data => {
+    let result = "";
+    data.forEach(element => {
+    container.innerHTML += 
+    `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
+        <img src="${element.img}" class="card-img-top" alt="${element.type}">
         <div class="card-body">
-        <p class="card-text">${element.name}</p>
-        <p class="card-text">${element.candy_count}</p>
-        <p class="card-text">${element.id}</p>
+        <p class="card-text">${element.name}</p> 
+        <p class="card-text">${element.type}</p>
+        </div>
         </div>
         </div>`
-})
-};
-
-document.getElementById('select-candy_count').addEventListener('change', () => {
-   let candyOrder = document.getElementById('select-candy_count').value;
-   let result = window.sortData(data,candyOrder);
-
-container.innerHTML ="";
-result.sort(element => {
-        container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
-        <img src="${element.img}" class="card-img-top" alt="${element.name}">
-        <div class="card-body">
-        <p class="card-text">${element.name}</p>
-        <p class="card-text">${element.candy_count}</p>
-        <p class="card-text">${element.id}</p>
-        </div>
-        </div>`
-})
 });
-//porcentaje Grass//
-/*const computeStats = (data) => {
-    data.forEach(element => {
-        container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
-        <div class="card-body">
-        <p class="card-text">${element.Grass}</p>
-        </div>
-        </div>`
+return result;
+}
 
-})        
-};       
+const percentage = document.getElementById('type-calculation');
+percentage.addEventListener('change', () => {
+    let condition = document.getElementById('type-calculation').value;
+    let result = window.computeStats(data,condition);
 
-document.getElementById('select-type').addEventListener('change' , () => {
-    let quantity = document.getElementById('select-type').value;
-    let result = window.computeStats(data,quantity);
-
-container.innerHTML ='';
-result.forEach(element => {
-    container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
-        <div class="card-body">
-        <p class="card-text">${element.Grass}</p>
-        </div>
-        </div>`
+container.innerHTML = "";
+container.innerHTML += `<h3>Total :</h3>
+    <h3>${result}</h3>`
 })
-}); */
 
-//Porcentaje de candys para evolucionar//
-
-/*const candyCount = (data) => {
-    data.forEach(element => {
-    container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
-        <img src="${element.img}" class="card-img-top" alt="${element.candy_count}">
-        <div class="card-body">
-        <p class="card-text">${element.candy_count}</p>
-        <p class="card-text">${element.name}</p>
-        </div>
-        </div>`
-})
-};
-
-document.getElementById('select-candy_count').addEventListener('change', () => {
-    let candys = document.getElementById('select-candy_count').value;
-    let candyResult = window.countCandy(data,candys);
-
-
-container.innerHTML ="";
-candyResult.forEach(element => {
-            container.innerHTML += `<div class="col-sm col-md-4 col-lg-3"><div class="card" id="drawcards">
-            <img src="${element.img}" class="card-img-top" alt="${element.candy_count}">
-            <div class="card-body">
-            <p class="card-text">${element.candy_count}</p>
-            <p class="card-text">${element.name}</p>
-            </div>
-            </div>`
-    })
-    }); */
 
 window.onload = showData2(data);
 window.onload = showData(data);
 window.onload = sortData2(data); 
-window.onload = sortCandy2(data);
-//window.onload = computeStats(data);//
-//window.onload = candyCount(data);//
+window.onload = dataCompute(data);
 
