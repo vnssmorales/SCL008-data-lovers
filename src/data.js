@@ -35,12 +35,16 @@ function sortBy(a, b) {
 }
 
 const computeStats = (data,condition) => {
-  let resultcompute = filterDataType(data,condition).length;
-  return resultcompute;
+  let compute = 0;
+  data.forEach(element => {
+      if(element.type.includes(condition)){
+        compute = compute+1;
 }
+});
+return Math.round((compute/151)*100)+'%';
+};
 
 window.sortData = sortData;
 window.filterData = filterData;
 window.filterDataType = filterDataType;
-//window.sortCandy = sortCandy;
 window.computeStats = computeStats;
